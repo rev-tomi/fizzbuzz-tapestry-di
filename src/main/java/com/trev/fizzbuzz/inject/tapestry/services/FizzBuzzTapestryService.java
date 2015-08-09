@@ -16,9 +16,10 @@ public class FizzBuzzTapestryService
 
     public void doFizzBuzz()
     {
-        numberProvider.getFizzBuzzNumbers().forEach(num -> {
+        for (final Integer num : numberProvider.getFizzBuzzNumbers())
+        {
             final String msg = textProvider.getFizzBuzzText(num);
             printer.printFizzBuzz(msg);
-        });
+        }
     }
 }

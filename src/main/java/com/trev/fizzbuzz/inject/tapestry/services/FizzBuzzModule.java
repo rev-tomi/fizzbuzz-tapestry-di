@@ -11,7 +11,6 @@ public class FizzBuzzModule
         binder.bind(FizzBuzzPrinter.class, DefaultFizzBuzzPrinter.class);
         binder.bind(FizzBuzzTextProvider.class, DefaultTextProvider.class);
         binder.bind(FizzBuzzTapestryService.class); // concrete service class
-
     }
 
 }
