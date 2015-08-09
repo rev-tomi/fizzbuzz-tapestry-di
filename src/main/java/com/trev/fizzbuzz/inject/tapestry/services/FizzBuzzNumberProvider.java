@@ -1,4 +1,4 @@
-package com.trev.fizzbuzz.inject.tapestry;
+package com.trev.fizzbuzz.inject.tapestry.services;
 
 import java.util.stream.Stream;
 
