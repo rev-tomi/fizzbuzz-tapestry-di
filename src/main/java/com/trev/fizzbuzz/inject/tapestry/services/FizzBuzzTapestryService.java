@@ -1,27 +1,18 @@
 package com.trev.fizzbuzz.inject.tapestry.services;
 
+import org.apache.tapestry5.ioc.annotations.Inject;
+
 public class FizzBuzzTapestryService
 {
 
-    private final FizzBuzzNumberProvider numberProvider;
-    private final FizzBuzzTextProvider textProvider;
-    private final FizzBuzzPrinter printer;
+    @Inject
+    private FizzBuzzNumberProvider numberProvider;
 
-    /**
-     * A constructor that needs module configuration.
-     *
-     * @param numberProvider creates a Stream of Integer
-     * @param textProvider translates integers to text
-     * @param printer prints the texts
-     */
-    public FizzBuzzTapestryService(final FizzBuzzNumberProvider numberProvider,
-        final FizzBuzzTextProvider textProvider,
-        final FizzBuzzPrinter printer)
-    {
-        this.numberProvider = numberProvider;
-        this.textProvider = textProvider;
-        this.printer = printer;
-    }
+    @Inject
+    private FizzBuzzTextProvider textProvider;
+
+    @Inject
+    private FizzBuzzPrinter printer;
 
     public void doFizzBuzz()
     {

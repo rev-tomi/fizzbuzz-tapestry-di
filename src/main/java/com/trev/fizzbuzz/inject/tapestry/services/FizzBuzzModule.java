@@ -10,7 +10,7 @@ public class FizzBuzzModule
         binder.bind(FizzBuzzNumberProvider.class, DefaultNumberProvider.class);
         binder.bind(FizzBuzzPrinter.class, DefaultFizzBuzzPrinter.class);
         binder.bind(FizzBuzzTextProvider.class, DefaultTextProvider.class);
-        binder.bind(FizzBuzzTapestryService.class, FizzBuzzTapestryService.class);
+        binder.bind(FizzBuzzTapestryService.class); // concrete service class
 
     }
 
